@@ -1,4 +1,5 @@
-from setuptools import setup, find_packages
+from setuptools import setup
+from setuptools import find_packages
 
 setup(
     name='Pyrebase',
@@ -15,12 +16,17 @@ setup(
     ],
     keywords='Firebase',
     packages=find_packages(exclude=['tests']),
+    extras_require={
+        'tests': [
+            'pytest',
+        ],
+    },
     install_requires=[
-        'requests==2.11.1',
-        'gcloud==0.17.0',
+        'requests>=2.11.1',
+        'gcloud<1.0.0',
         'oauth2client==3.0.0',
         'requests_toolbelt==0.7.0',
         'python_jwt==2.0.1',
-        'pycryptodome==3.4.3'
+        'pycryptodome==3.4.3',
     ]
 )

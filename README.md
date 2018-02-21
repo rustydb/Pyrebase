@@ -5,7 +5,11 @@ A simple python wrapper for the [Firebase API](https://firebase.google.com).
 ## Installation
 
 ```python
+# Through PyPi
 pip install pyrebase
+
+# Locally, through setuptools
+python setup.py install
 ```
 
 ## Getting Started

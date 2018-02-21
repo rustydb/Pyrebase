@@ -6,7 +6,7 @@ the default pyrebase + the testing tools.
 
 ```
 mkvirtualenv -p python3 pyrebase-dev # if you have virtualenvwrapper installed
-pip install -r requirements.txt -r requirements.dev.txt
+python setup.py install && pip install .[test]
 ```
 
 Configure a test database
